@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.ToDoList {
+  background-color: #0d6efd;
+  width: 675px;
+  height: 155px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom: 5px solid black;
+}
+
+.ToDoList h1 {
+  color: black;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.ToDoList div {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.ToDoList div #input {
+  width: 65%;
+  height: 40px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+.ToDoList div input[type="button"] {
+  width: 20%;
+  height: 40px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background-color: white;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  font-weight: bold;
+  color: rgb(55, 55, 55);
+  border: 1px solid black;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  cursor: pointer;
+}
+
+.ToDoList div input[type="button"]:hover {
+  background-color: rgb(55, 55, 55);
+  color: white;
+}
+.ToDoList div input[type="button"]:active {
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  opacity: 0.4;
+}
+
+#Lists {
+  max-height: 350px;
+  overflow-y: auto;
+  border-top: none;
+  background-color: #0d6efd;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  padding: 15px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: 3px solid black;
+}
+#Lists p {
+  font-size: 17px;
+  width: 620px;
+  height: 55px;
+  overflow: hidden;
+  background-color: white;
+  font-weight: 550;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  cursor: pointer;
+  justify-content: space-between;
+  user-select: none;
+}
+
+#Lists p::after {
+  content: ;
+}
+
+#Lists p:hover {
+  background-color: #dcdcdc;
+}
+#Lists p:active {
+  opacity: 0.6;
+}
+i {
+  text-decoration: none !important;
+  font-size: 23px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+}
+#Lists p:hover i {
+  opacity: 1;
+}
+i:hover {
+  color: #dc3545;
+}
+i:active {
+  color: rgba(220, 53, 69, 0.6);
+}
+
+.DoneTopic {
+  text-decoration: line-through;
+  text-decoration-thickness: 2.5px;
+  text-decoration-color: #dc3545;
+  -moz-text-decoration-color: #dc3545;
+  text-decoration-style: solid;
+  -moz-text-decoration-style: solid;
+  outline: 2px solid #dc3545;
+  opacity: 1 !important;
+}
+.spanoff {
+  display: none;
+  color: #dc3545;
+  text-decoration: none !important;
+}
+.spanon {
+  display: inline-block;
+  text-decoration: none !important;
+}
